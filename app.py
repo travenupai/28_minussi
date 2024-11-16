@@ -9,7 +9,7 @@ from docx import Document
 
 
 # Configuração do título da aplicação
-st.title('Análise SWOT com AI Agents - CrewAI')
+st.title('Pri Degobbi SWOT Analysis with Artificial Intelligence Agents - Powered by CrewAI')
 
 # Campo de entrada para a URL do site
 site_url = st.text_input("Digite a URL do site para análise, incluindo o https:// ")
@@ -49,7 +49,7 @@ def criar_zip(arquivos_md):
 # Botão para iniciar a execução do pipeline
 if st.button("Executar Análise"):
     # Exibe um spinner enquanto o pipeline está em execução
-    with st.spinner("Analisando... por favor, aguarde."):
+    with st.spinner("5 agents trabalhando milhares de tokens.. por favor, aguarde 5 a 10 min."):
         if 'SwotCrew' in globals():
             # Executa o pipeline com a URL fornecida
             crew_instance = SwotCrew().crew()  # Cria uma instância da Crew
