@@ -1,0 +1,10 @@
+.env
+__pycache__/
+.venv
+uv.lock
+/.venv/
+my_llm.py
+analisar_recomendar_swot.md
+analise_swot.md
+financiamento_estrategico.md
+pesquisar_solucoes_ia.md
