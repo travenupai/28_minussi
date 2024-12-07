@@ -6,11 +6,11 @@ requests==2.32.3                 # Chamadas HTTP
 streamlit==1.38.0                # Interface Web
 fpdf2==2.8.1                     # Manipulação de PDFs
 python-docx==0.8.11              # Geração de arquivos Word
-langchain==0.0.212               # Ferramentas adicionais para integração com LLMs
+langchain==0.2.16               # Ferramentas adicionais para integração com LLMs
 pandas==2.1.2                    # Manipulação de dados tabulares
 protobuf==3.20.3                 # Compatibilidade com Streamlit
 tenacity==8.2.3                  # Requisitos de resiliência para OpenAI API
-pydantic==1.10.12
+
 
 
 
