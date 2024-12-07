@@ -7,5 +7,5 @@ streamlit==1.38.0                # Interface Web
 fpdf2==2.8.1                     # Manipulação de PDFs
 python-docx==0.8.11              # Geração de arquivos Word
 pysqlite3-binary                 # Banco de dados SQLite
-langchain==0.0.323               # Substitui langchain-openai, fornece integração com OpenAI
+langchain==0.0.290               # Versão compatível com crewai 0.61.0
 pydantic==1.10.9
