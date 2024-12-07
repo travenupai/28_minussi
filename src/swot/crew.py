@@ -8,17 +8,14 @@ from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, ScrapeElementFromWebsiteTool
 from langchain.chat_models import ChatOpenAI
 
-# Carrega variáveis de ambiente
 load_dotenv()
 
-# Define a API key da OpenAI
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
 
 openai.api_key = api_key
 
-# Inicializa o LLM
 llm                   = ChatOpenAI(model_name="gpt-4o-mini", openai_api_key=api_key)
 gpt_mini              = ChatOpenAI(model_name="gpt-4o-mini", openai_api_key=api_key)
 gpt4o_mini_2024_07_18 = ChatOpenAI(model_name="gpt-4o-mini-2024-07-18", openai_api_key=api_key)
@@ -26,7 +23,6 @@ gpt4o                 = ChatOpenAI(model_name="gpt-4o", openai_api_key=api_key)
 gpt_o1                = ChatOpenAI(model_name="o1-preview", openai_api_key=api_key)
 gpt_o1_mini           = ChatOpenAI(model_name="o1-mini", openai_api_key=api_key)
 
-# Ferramentas
 search_tool = SerperDevTool()
 scrape_tool = ScrapeWebsiteTool()
 scrape_element_tool = ScrapeElementFromWebsiteTool()
@@ -140,7 +136,6 @@ class SwotCrew():
 
     @crew
     def crew(self) -> Crew:
-        """Cria o Swot crew"""
         return Crew(
             agents=self.agents,
             tasks=self.tasks,
@@ -148,4 +143,3 @@ class SwotCrew():
             verbose=True,
             memory=True
         )
-

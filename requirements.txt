@@ -1,11 +1,11 @@
 crewai==0.61.0                   # Orquestra agentes e tarefas
-crewai-tools==0.8.3             # Ferramentas adicionais para CrewAI
-python-dotenv==1.0.1             # Carregar variáveis de ambiente do .env
+crewai-tools==0.8.3              # Ferramentas adicionais para CrewAI
+python-dotenv==1.0.1             # Carrega variáveis de ambiente do .env
 openai==1.54.0                   # API para LLMs da OpenAI
 requests==2.32.3                 # Chamadas HTTP
 streamlit==1.38.0                # Interface Web
 fpdf2==2.8.1                     # Manipulação de PDFs
 python-docx==0.8.11              # Geração de arquivos Word
 pysqlite3-binary                 # Banco de dados SQLite
-langchain==0.0.290               # Versão compatível com crewai 0.61.0
-pydantic==1.10.9
+langchain==0.2.20                # Compatível com crewai 0.61.0 (>=0.2.16,<0.3.0)
+pydantic==2.4.2                  # Compatível com crewai 0.61.0 (>=2.4.2,<3.0.0)
