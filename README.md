@@ -24,8 +24,7 @@ pip install uv
 uv pip install crewai crewai-tools
 uv pip install --upgrade crewai crewai-tools
 uv pip install streamlit
-uv lock
-uv sync
+
 
 ATENCAO: SÓ PRECISA DAR CREWAI INSTAL SE NAO DER PIP INSTALL CREWAI CREWAI-TOOLS
 
