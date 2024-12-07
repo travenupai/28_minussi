@@ -1,11 +1,21 @@
-# SalesOffer Crew
+# SWOT
 
 Welcome to the Swot Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
-criar um NOVO projeto:
 
+# Novo projeto com Streamlit do ZERO, nada de reaproveitar:
 1. Crie um diretório na pasta projetos python e de um número sequencial.
+
+
+python -m venv .venv
+.venv\Scripts\activate
+pip install crewai
+
+crewai create crew swot  #swot ou o nome que quiser
+
+cd swot
+
 2. Crie um ambiente virtual seguindo os passos abaixo:
 
 python -m venv .venv
@@ -14,11 +24,10 @@ pip install uv
 uv pip install crewai crewai-tools
 uv pip install --upgrade crewai crewai-tools
 uv pip install streamlit
-crewai install
 uv lock
 uv sync
 
-ATENCAO: SÓ PRECISA DAR O CREWAI INSTALL APENAS NO COMEÇO OU QUANDO NOVO pyproject ou novo venv.
+ATENCAO: SÓ PRECISA DAR CREWAI INSTAL SE NAO DER PIP INSTALL CREWAI CREWAI-TOOLS
 
 
 
@@ -55,7 +64,31 @@ Para rodar o programa:
 
 crewai run      # Para executar o seu projeto principal
 
+# criar um NOVO projeto em python 3.11 com Streamlit :
 
+1. Crie um diretório na pasta projetos python e de um número sequencial.
+
+C:\Users\Ashram\AppData\Local\Programs\Python\Python311\python.exe -m venv .venv
+.venv\Scripts\activate
+pip install uv
+uv pip install -r requirements.txt
+uv lock
+uv sync
+
+crewai create crew swot
+
+cd swot
+
+2. Crie um ambiente virtual seguindo os passos abaixo:
+
+C:\Users\Ashram\AppData\Local\Programs\Python\Python311\python.exe -m venv .venv
+.venv\Scripts\activate
+pip install uv
+uv pip install -r requirements.txt
+uv lock
+uv sync
+
+streamlit run app.py
 
 ## 3. Subir um repositório do VSCode para o GitHub
 
