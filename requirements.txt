@@ -1,17 +1,27 @@
-crewai==0.61.0                   # Orquestra agentes e tarefas
-crewai-tools==0.12.1              # Ferramentas adicionais para CrewAI
-python-dotenv==1.0.1             # Carregar variáveis de ambiente do .env
-openai==1.54.0                   # API para LLMs da OpenAI
-requests==2.32.3                 # Chamadas HTTP
-streamlit==1.38.0                # Interface Web
-fpdf2==2.8.1                     # Manipulação de PDFs
-python-docx==0.8.11              # Geração de arquivos Word
-langchain==0.2.16               # Ferramentas adicionais para integração com LLMs
-pandas==2.1.2                    # Manipulação de dados tabulares
-protobuf==3.20.3                 # Compatibilidade com Streamlit
-tenacity==8.2.3                  # Requisitos de resiliência para OpenAI API
+# CrewAI and Tools
+crewai==0.61.0
+crewai-tools==0.8.3
 
+# Embedchain and Langchain
+embedchain>=0.1.114,<0.2.0
+langchain>=0.2.16,<0.4.0
+langchain-openai>=0.1.7,<0.2.0
 
+# OpenAI integration
+openai>=1.54.0
 
+# HTTP Requests
+requests>=2.32.3
 
+# Streamlit
+streamlit>=1.38.0
 
+# Environment Variables Management
+python-dotenv>=1.0.1
+
+# PDF and Document Processing
+fpdf2>=2.8.1
+python-docx>=0.8.11
+
+# SQLite3 Compatibility (Critical for Chroma)
+pysqlite3-binary>=0.4.6
