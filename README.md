@@ -8,22 +8,30 @@ Welcome to the Swot Crew project, powered by [crewAI](https://crewai.com). This 
 1. Crie um diretório na pasta projetos python e de um número sequencial.
 
 
-python -m venv .venv
-.venv\Scripts\activate
-pip install crewai
-
 crewai create crew swot  #swot ou o nome que quiser
 
 cd swot
 
 2. Crie um ambiente virtual seguindo os passos abaixo:
 
-python -m venv .venv
+se for no python 3.11 para o streamlit:
+
+
+pip install poetry
+py -3.11 -m venv .venv
 .venv\Scripts\activate
-pip install uv
-uv pip install crewai crewai-tools
-uv pip install --upgrade crewai crewai-tools
-uv pip install streamlit
+uv init
+uv add crewai
+.venv\Scripts\activate
+==0.61.0
+crewai create crew swot  #swot ou o nome que quiser
+cd swot
+
+uv add crewai-tools
+uv add streamlit
+uv add python-docx
+uv add pydantic
+uv add langchain-community
 
 
 ATENCAO: SÓ PRECISA DAR CREWAI INSTAL SE NAO DER PIP INSTALL CREWAI CREWAI-TOOLS
